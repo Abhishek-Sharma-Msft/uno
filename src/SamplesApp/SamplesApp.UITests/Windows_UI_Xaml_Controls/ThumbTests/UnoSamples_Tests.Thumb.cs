@@ -15,6 +15,7 @@ using Uno.UITest.Helpers.Queries;
 namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.ThumbTests
 {
 	[TestFixture]
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
 	public partial class ThumbTests : SampleControlUITestBase
 	{
 		private const string _sample = "UITests.Windows_UI_Xaml_Controls.ThumbTests.Thumb_DragEvents";

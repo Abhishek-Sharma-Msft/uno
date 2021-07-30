@@ -10,6 +10,7 @@ using Uno.UITest.Helpers.Queries;
 namespace SamplesApp.UITests.Windows_UI_Xaml_Input
 {
 	[TestFixture]
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
 	public partial class NestedHandling_Tests : SampleControlUITestBase
 	{
 		private const string _sample = "UITests.Windows_UI_Input.PointersTests.NestedHandling";

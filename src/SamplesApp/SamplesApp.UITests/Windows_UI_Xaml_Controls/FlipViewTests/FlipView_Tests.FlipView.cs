@@ -12,7 +12,8 @@ using System.Linq;
 namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.FlipViewTests
 {
     [TestFixture]
-    public partial class FlipView_Tests : SampleControlUITestBase
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
+	public partial class FlipView_Tests : SampleControlUITestBase
     {
 		[Test]
 		[AutoRetry]

@@ -9,10 +9,12 @@ using NUnit.Framework;
 using SamplesApp.UITests._Utils;
 using SamplesApp.UITests.TestFramework;
 using Uno.UITest;
+using Uno.UITest.Helpers.Queries;
 
 namespace SamplesApp.UITests.Windows_UI_Xaml_Media.Transform_Tests
 {
 	[TestFixture]
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/1955
 	public partial class Basics_Automated : SampleControlUITestBase
 	{
 		private IAppRect _sut;

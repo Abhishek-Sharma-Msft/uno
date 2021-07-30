@@ -12,6 +12,7 @@ using Uno.UITest.Helpers.Queries;
 namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.WebViewTests
 {
 	[TestFixture]
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
 	public partial class WebView_Tests : SampleControlUITestBase
 	{
 		[Test]

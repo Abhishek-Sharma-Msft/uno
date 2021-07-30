@@ -11,6 +11,7 @@ using Uno.UITest.Helpers.Queries;
 namespace SamplesApp.UITests.Windows_UI_Xaml.VisualStateManagerTests
 {
 	[TestFixture]
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
 	public partial class VisualStateManagerTest : SampleControlUITestBase
 	{
 		[Test]

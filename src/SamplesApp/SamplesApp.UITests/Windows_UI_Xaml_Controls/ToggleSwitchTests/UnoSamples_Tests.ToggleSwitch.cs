@@ -10,6 +10,7 @@ using Uno.UITest.Helpers.Queries;
 namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.ToggleSwitchTests
 {
 	[TestFixture]
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
 	public partial class ToggleSwitch_Tests : SampleControlUITestBase
 	{
 		[Test]

@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using SamplesApp.UITests.Extensions;
 using SamplesApp.UITests.TestFramework;
+using Uno.UITest.Helpers.Queries;
 
 namespace SamplesApp.UITests.Windows_UI_Xaml_Input
 {
 	[TestFixture]
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
 	public partial class ScrollViewer_Pointer_Tests : SampleControlUITestBase
 	{
 		[Test]

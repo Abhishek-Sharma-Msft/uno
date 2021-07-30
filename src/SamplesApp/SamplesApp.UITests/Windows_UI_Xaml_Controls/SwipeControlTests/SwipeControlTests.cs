@@ -11,6 +11,7 @@ using Query = System.Func<Uno.UITest.IAppQuery, Uno.UITest.IAppQuery>;
 namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.SwipeControlTests
 {
 	[TestFixture]
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
 	public partial class SwipeControlTests : SampleControlUITestBase
 	{
 		[Test]

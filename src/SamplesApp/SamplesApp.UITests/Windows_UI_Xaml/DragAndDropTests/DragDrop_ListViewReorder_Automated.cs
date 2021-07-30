@@ -12,6 +12,7 @@ using Uno.UITest.Helpers.Queries;
 
 namespace SamplesApp.UITests.Windows_UI_Xaml.DragAndDropTests
 {
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
 	public partial class DragDrop_ListViewReorder_Automated : SampleControlUITestBase
 	{
 		private static readonly string[] _items = new[] { "#FF0018", "#FFA52C", "#FFFF41", "#008018", "#0000F9", "#86007D" };

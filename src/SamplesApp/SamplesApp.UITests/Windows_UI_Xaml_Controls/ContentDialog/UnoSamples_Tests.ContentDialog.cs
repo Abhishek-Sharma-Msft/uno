@@ -13,6 +13,7 @@ using Uno.UITests.Helpers;
 namespace SamplesApp.UITests.Windows_UI_Xaml_Controls.ContentDialogTests
 {
 	[TestFixture]
+	[ActivePlatforms(Platform.Android, Platform.Browser)] // https://github.com/unoplatform/uno/issues/195
 	public partial class ContentDialog_Tests : SampleControlUITestBase
 	{
 		private ScreenshotInfo CurrentTestTakeScreenShot(string name) =>
